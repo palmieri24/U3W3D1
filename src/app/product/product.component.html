@@ -1,0 +1,13 @@
+<h2>I nostri prodotti:</h2>
+
+<div *ngFor="let product of products">
+  <div class="card" style="width: 18rem">
+    <div class="card-img">{{ product.images }}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text">{{ product.description }}</p>
+      <a class="btn btn-primary"><i class="bi bi-cart-plus"></i></a>
+      <a class="btn btn-primary"><i class="bi bi-suit-heart-fill"></i></a>
+    </div>
+  </div>
+</div>
